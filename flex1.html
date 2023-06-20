@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+    }
+
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./bg-full.jpg);
+      background-size: 100% 100%;
+    }
+
+    .container {
+      width: 1200px;
+      height: 600px;
+      border: 0.5px solid gainsboro;
+    }
+
+    .display-flex {
+      display: flex;
+    }
+
+    .left {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./main.jpg);
+      background-size: 100% 100%;
+      width: 600px;
+      height: 600px;
+      color: white;
+    }
+
+    .right {
+      background: linear-gradient(180deg, gray 50%, black 50%);
+      width: 600px;
+      height: 600px;
+    }
+
+    .border {
+      border: 0.5px solid #333;
+    }
+
+    .row {
+      flex-direction: row;
+    }
+
+    .column {
+      flex-direction: column
+    }
+
+    .top {
+      width: 600px;
+      height: 300px;
+      background: url(./cloud.png);
+      background-position: right bottom;
+      background-size: 40%;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .top * {
+      margin-left: 30px;
+    }
+
+    .bottom * {
+      margin-right: 20px;
+    }
+
+    .bottom {
+      width: 600px;
+      height: 300px;
+      background: lightseagreen;
+      background: url(./tifa.png);
+      background-position: left bottom;
+      background-size: 40%;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      color: white;
+      justify-content: center;
+    }
+
+
+
+    .left h3 {
+      width: 400px;
+    }
+
+    .right h3 {
+      width: 300px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container display-flex row">
+    <div class="left display-flex column" style="justify-content: center;
+    align-items: center;">
+      <img src="./ps4-ff7.png" width="200px">
+      <h1>AVAILABLE NOW</h1>
+      <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nesciunt animi eum aut
+        corporis quibusdam
+        ducimus tenetur. Maiores itaque pariatur eveniet dignissimos! Beatae provident veritatis consequuntur sint
+        possimus excepturi libero?</h3>
+    </div>
+    <div class="right column">
+      <div class="top">
+        <h1>CLOUD</h1>
+        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed eum dolore temporibus provident reprehenderit
+          fugiat placeat ut sit dolor odio nobis facere pariatur alias perspiciatis asperiores, modi maxime? </h3>
+      </div>
+      <div class="bottom">
+        <div>
+          <h1>Tifa</h1>
+          <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed eum dolore temporibus provident
+            reprehenderit
+            fugiat placeat ut sit dolor odio nobis facere pariatur alias perspiciatis asperiore
+          </h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
